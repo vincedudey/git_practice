@@ -25,3 +25,25 @@ Changes to be committed:
 
 git commit -m "message to do with the what and why with the commit you're making" -m "for the description box"
 git push 
+
+Initializing a new repository in a new local folder:
+
+1. cd new_folder
+2. git init
+3. create new connection from local git to github
+3a. create new repository on github
+3b. git remote add origin https://github.com/vincedudey/git_practice2.git (new repository link)
+3c. git remote -v (to verify the origin is connected to your local folder)
+3d. git push -u origin master (set upstream, so subsequent pushes will automatically push to the master)
+
+Listing the branches you are currently working with in this repository
+1. git branch
+1a. the branch that has a '*' next to it is the one you are currently in
+
+Create a new branch in the repository
+1. git checkout -b <branch_name>
+2. Switched to a new branch 'feature-readme-instructions'
+
+Switching from new branch back to master branch
+1. git checkout master
+
