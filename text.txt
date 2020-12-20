@@ -35,6 +35,7 @@ Initializing a new repository in a new local folder:
 3b. git remote add origin https://github.com/vincedudey/git_practice2.git (new repository link)
 3c. git remote -v (to verify the origin is connected to your local folder)
 3d. git push -u origin master (set upstream, so subsequent pushes will automatically push to the master)
+3e. git push --set-upstream origin master (same thing has 3d.)
 
 Listing the branches you are currently working with in this repository
 1. git branch
@@ -46,4 +47,9 @@ Create a new branch in the repository
 
 Switching from new branch back to master branch
 1. git checkout master
+
+Comparing between the current branch with another branch
+1. git checkout master
+2. git diff feature-readme-instructions
+
 
