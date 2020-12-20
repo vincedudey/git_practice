@@ -1,1 +1,27 @@
-Some text
+C:\Users\Vincent\Desktop\Notes\git>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Fix: cd to a folder that's cloned from a repository
+
+Changes not staged for commit:
+  (use "git add file..." to update what will be committed)
+  (use "git restore file..." to discard changes in working directory)
+        modified:   README.md
+
+Fix: add the modified files using "git add filename1, filename2, ..."
+
+Untracked files:
+  (use "git add file..." to include in what will be committed)
+        text.txt
+
+Fix: add the new files using "git add filename1, filename2, ..."
+
+>> git add . --> stages both modified and new files
+
+Changes to be committed:
+  (use "git restore --staged file..." to unstage)
+        modified:   README.md
+        new file:   text.txt
+
+git commit -m "message to do with the what and why with the commit you're making" -m "for the description box"
+git push 
